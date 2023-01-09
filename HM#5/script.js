@@ -220,9 +220,13 @@ function handleFigures (figures) {
     console.log ("Total area: " + sumOfAreas);
 }
 
-
+try {
 let figure = new Triangle (3,4,5);
 let figure2 = new Circle (40);
 let figure3 = new Square (30);
 
 handleFigures ([figure, figure2, figure3]);
+
+} catch (error) {
+    console.log(error.message);
+}
